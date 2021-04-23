@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TMDB</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_movie">Movie</string>
+    <string name="title_tv">Tv</string>
+    <string name="title_celeb">Celebrities</string>
+    <string name="title_setting">Setting</string>
+</resources>

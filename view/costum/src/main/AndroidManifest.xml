@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.pouyarezaei.costum">
+
+    <application>
+        <activity
+            android:name=".TestViewsActivity"
+            android:label="@string/title_activity_test_views"></activity>
+    </application>
+
+</manifest>

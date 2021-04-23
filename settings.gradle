@@ -1,0 +1,11 @@
+include ':data:local'
+include ':view:costum'
+include ':data:model'
+include ':data:remote'
+include ':feature:celebrity'
+include ':feature:tv'
+include ':feature:setting'
+include ':feature:movie'
+include ':feature:search'
+include ':app'
+rootProject.name = "TMDB"

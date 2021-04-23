@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SliderItemView">
+        <attr name="siv_text" format="string" />
+        <attr name="siv_text_color" format="color" />
+        <attr name="siv_text_size" format="dimension" />
+        <attr name="siv_image" format="reference" />
+    </declare-styleable>
+</resources>
