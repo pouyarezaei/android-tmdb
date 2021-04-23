@@ -17,7 +17,7 @@ class TMDBApplication : Application() {
         super.onCreate()
         appComponent = DaggerAppComponent.factory().create(this@TMDBApplication)
             .also { it.inject(this@TMDBApplication) }
-    
+
     }
 
 
