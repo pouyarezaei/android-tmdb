@@ -1,3 +1,4 @@
+include ':data:repository'
 include ':data:local'
 include ':view:costum'
 include ':data:model'
