@@ -1,4 +1,4 @@
-# fa_dict
+# Android TMDB
 
 This Application is written for training android application development using Kotlin ,Dagger ,Modular Pattern and Navigation Component.
 
