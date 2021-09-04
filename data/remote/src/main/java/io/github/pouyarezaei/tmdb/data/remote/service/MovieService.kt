@@ -57,9 +57,13 @@ interface MovieService {
     /**
      * Get a list of recommended movies for a movie.
      * @param movieId Specify which page to query.
+     * @param page Specify which page to query.
      */
     @GET("movie/{id}/recommendations")
-    suspend fun getMovieRecommendations(@Path("id") movieId: Int): MovieDiscoverResponse
+    suspend fun getMovieRecommendations(
+        @Path("id") movieId: Int,
+        @Query("page") page: Int
+    ): MovieDiscoverResponse
 
     /**
      * Get the credits (cast and crew) that have been added to a TV show.
@@ -71,27 +75,34 @@ interface MovieService {
     /**
      * Get a list of similar movies. This is not the same as the "Recommendation" system you see on the website.
      * @param movieId Specify which page to query.
+     * @param page Specify which page to query.
      */
     @GET("movie/{id}/similar")
-    suspend fun getSimilarMovies(@Path("id") movieId: Int): MovieDiscoverResponse
+    suspend fun getSimilarMovies(
+        @Path("id") movieId: Int,
+        @Query("page") page: Int
+    ): MovieDiscoverResponse
 
     /**
      * Get a list of upcoming movies in theatres. This is a release type query that looks for all movies that have a release type of 2 or 3 within the specified date range.
+     * @param page Specify which page to query.
      */
     @GET("movie/upcoming")
-    suspend fun getUpComingMovies(): MovieDiscoverResponse
+    suspend fun getUpComingMovies(@Query("page") page: Int): MovieDiscoverResponse
 
     /**
      * Get the top rated movies on TMDb.
+     * @param page Specify which page to query.
      */
     @GET("movie/top_rated")
-    suspend fun getTopRatedMovies(): MovieDiscoverResponse
+    suspend fun getTopRatedMovies(@Query("page") page: Int): MovieDiscoverResponse
 
     /**
      * Get a list of the current popular movies on TMDb. This list updates daily.
+     * @param page Specify which page to query.
      */
     @GET("movie/popular")
-    suspend fun getPopularMovies(): MovieDiscoverResponse
+    suspend fun getPopularMovies(@Query("page") page: Int): MovieDiscoverResponse
 
     /**
      * Get the most newly created movie. This is a live response and will continuously change.
